@@ -107,7 +107,8 @@
 
                     <li class="comments"><a href="#">12 Comments</a></li>
                 </ul>
-                {{$singleblog->description}}       
+                {{$singleblog->description}}     
+                {!! $singleblog->description !!}      
             </div>
         </div>
     </article>
