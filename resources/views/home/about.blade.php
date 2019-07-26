@@ -174,7 +174,7 @@
 					>
 					
 					
-					<div class="text-en" style="font-size: 35px; text-align: justify;">Foodgram adalah kumpulan berbagai resep menu masakan, mulai dari cara memasak yang paling dasar hingga hidangan-hidangan utama baik dalam maupun luar negeri.</div>
+					<div class="text-en" style="font-size: 30px; text-align: justify;">Selamat Datang di Foodgram.<br> Foodgram adalah kumpulan berbagai resep menu masakan, mulai dari cara memasak yang paling dasar hingga hidangan-hidangan utama baik dalam maupun luar negeri.</div>
                     </div>
                     <div class="message-logo"
                         data--8000-top="opacity: 0;"
