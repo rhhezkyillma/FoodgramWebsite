@@ -67,10 +67,10 @@
                         <div class="footer-box-b" >
                             <h3>New Menu</h3>
                             <ul style="margin-top:11px">
-                                <li><a href="#">Italian Bomba Sandwich</a></li>
-                                <li><a href="#">Double Dose of Pork Belly</a></li>
-                                <li><a href="#">Spicy Thai Noodles</a></li>
-                                <li><a href="#">Triple Truffle Trotters</a></li>
+                                <li><a href="#">Sate Padang</a></li>
+                                <li><a href="#">Sate Ayam</a></li>
+                                <li><a href="#">Sup Ayam</a></li>
+                                <li><a href="#">Es Teler</a></li>
                             </ul>
                         </div>
                         <!-- end footer-box-b -->
