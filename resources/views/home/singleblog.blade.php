@@ -106,8 +106,7 @@
                     <li class="author"><a href="#">{{$singleblog->name}}</a></li>
 
                     <li class="comments"><a href="#">12 Comments</a></li>
-                </ul>
-                {{$singleblog->description}}     
+                </ul>    
                 {!! $singleblog->description !!}      
             </div>
         </div>

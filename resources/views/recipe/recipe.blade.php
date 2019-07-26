@@ -25,6 +25,7 @@
                     <div class="blog_desc">
                       <div class="title">{{$item->title}}</div>
                       <div class="desc dot">{{str_limit($item->description, $limit = 150, $end = '...')}} </div>
+                      <div class="desc dot">{!! str_limit($item->description, $limit = 150, $end = '...') !!} </div>
                     </div></a></div>
               @endforeach
             </div>
