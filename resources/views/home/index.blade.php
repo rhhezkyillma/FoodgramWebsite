@@ -27,7 +27,7 @@
                                             <div class="split-images-var2 col-size text-center">
                                                 <div class="image-first inner-split">
                                                     <div class="image common-split animated wow flipInY animation-delay100ms">
-                                                        <a href="#"><img src="{{ asset($item->image) }}" alt="image"/></a>
+                                                        <a href="#"><img src="{{ asset($item->image) }}" alt="image" style="margin-bottom=100px"/></a>
                                                     </div>
                                                     <div class="intro common-split animated wow flipInY animation-delay200ms">
                                                         <div class="intro-inner ">

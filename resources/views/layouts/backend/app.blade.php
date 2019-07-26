@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') - {{ config('app.name', 'Foodgram') }}</title>
+    <title>Admin - Foodgram</title>
     <!-- Include Editor style. -->
     <link href='https://cdn.jsdelivr.net/npm/froala-editor@3.0.3/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
 
