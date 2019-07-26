@@ -80,7 +80,7 @@ class HomeController extends Controller
                 ->join('users', 'users.id', '=', 'article.created_by')
                 ->select('article.*', 'users.name')
                 ->orderBy('created_at')
-                ->limit(3)
+                ->limit(4)
                 ->get();
         return view('recipe.recipe',['recipe' => $articledata,'bestrecipe'=>$bestrecipe,'latestrecipe' => $latestrecipe]);
     }
