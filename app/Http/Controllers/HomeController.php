@@ -80,7 +80,7 @@ class HomeController extends Controller
                 ->join('users', 'users.id', '=', 'article.created_by')
                 ->select('article.*', 'users.name')
                 ->orderBy('created_at')
-                ->limit(4)
+                ->limit(3)
                 ->get();
         return view('recipe.recipe',['recipe' => $articledata,'bestrecipe'=>$bestrecipe,'latestrecipe' => $latestrecipe]);
     }
@@ -100,7 +100,7 @@ class HomeController extends Controller
                 ->join('users', 'users.id', '=', 'article.created_by')
                 ->select('article.*', 'users.name')
                 ->orderBy('created_at')
-                ->limit(4)
+                ->limit(3)
                 ->get();
         $categorydata = CategoryModel::all();
         $singleblog =  DB::table('article')->join('users', 'users.id', '=', 'article.created_by')
