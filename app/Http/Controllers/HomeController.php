@@ -52,12 +52,12 @@ class HomeController extends Controller
         $articledata = DB::table('article')
                 ->join('users', 'users.id', '=', 'article.created_by')
                 ->select('article.*', 'users.name')
-                ->paginate(3);
+                ->paginate(4);
         $latestnewsdata = DB::table('article')
                 ->join('users', 'users.id', '=', 'article.created_by')
                 ->select('article.*', 'users.name')
                 ->orderBy('created_at')
-                ->limit(3)
+                ->limit(4)
                 ->get();
         $categorydata = CategoryModel::all();
         return view('home.blog',['article' => $articledata,'category'=>$categorydata,'latestnews' => $latestnewsdata]);
