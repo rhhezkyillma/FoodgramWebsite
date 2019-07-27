@@ -34,7 +34,7 @@
                                                             <h3><a href="#">{{$item->title}}</a></h3>
                                                             
                                                             <p>
-                                                                    {!! str_limit($item->description, $limit = 30, $end = '...')!!}
+                                                                    {!! str_limit($item->description, $limit = 100, $end = '...')!!}
                                                             </p>
                                                             <a class="read-more" href="{{route('singlerecipe.index',['id ' => $item->title])}}">Learn more</a>
                                                         </div>

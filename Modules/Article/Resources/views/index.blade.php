@@ -64,6 +64,12 @@
                                                <textarea class="form-control" id="description" name="description"></textarea>
                                             </div>
                                         </div>
+                                        <label for="image">direction</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                               <textarea class="form-control" id="direction" name="direction"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="submit" class="btn btn-primary">Save Change</button>
@@ -117,6 +123,13 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <textarea class="form-control" name="descriptionedit" id="descriptionedit"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <label for="slug">direction</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" class="form-control" placeholder="directionedit" name="directionedit" id="directionedit">
                                             </div>
                                         </div>
                                     </div>
@@ -182,6 +195,7 @@
                     $( '#descriptionedit' ).val(data.description);
                     $( '#categoryedit' ).val(data.id_category);
                     $( '#idarticle' ).val(data.id_article);
+                    $( '#directionedit' ).val(data.direction);
                 }
             })
         }
@@ -233,6 +247,7 @@
                     data.append( 'description', $( '#description' ).val());
                     data.append( 'slug', $( '#slug' ).val());
                     data.append( 'category', $( '#category' ).val());
+                    data.append( 'direction', $( '#direction' ).val());
                     data.append( 'image', $( '#image' )[0].files[0]);
                     $.ajax({
                         url:'/api/article',
@@ -251,6 +266,7 @@
                                     $( '#slug' ).val('');
                                     $('#image').val('');
                                     $( '#category' ).val('');
+                                    $( '#direction' ).val('');
                                     $('#myModal').modal('toggle');
                                 })
                                 table.ajax.reload();
@@ -278,6 +294,7 @@
                     data.append( 'slug', $( '#slugedit' ).val());
                     data.append( 'description', $( '#descriptionedit' ).val());
                     data.append( 'category', $( '#categoryedit' ).val());
+                    data.append( 'direction', $( '#directionedit' ).val());
                     data.append( 'image', $( '#imageedit' )[0].files[0]);
                     $.ajax({
                         url:'/api/article/'+id,
@@ -295,6 +312,7 @@
                                     $( '#descriptionedit' ).val('');
                                     $( '#slugedit' ).val('');
                                     $( '#categoryedit' ).val('');
+                                    $( '#directionedit').val('');
                                     $('#imageedit').val('');
                                     $('#modals2').modal('toggle');
                                 })
