@@ -274,8 +274,11 @@
                                                        
 
                                                         <label class="anim" style="margin-top: 20px; margin-left: 1px; margin-right: 1px">
-                                                        <input type="checkbox" class="checkbox">
+                                                        <div class="checklist">
+                                                          <input type="checkbox" class="checkbox " required>
+                                                        </div>
                                                             <span style="margin-top: -5px;">Remember Me</span> 
+                                                          
                                                             <a href="#" >Forgot Password</a>
                                                         </label> 
                                                             <div class="clear"></div>
@@ -296,7 +299,15 @@
         </section>
         <!--End Welcome Section-->
 
-
+  <script>
+    $(function () {
+      $('input').checklist({
+        checkboxClass: 'icheckbox_square-blue',
+        radioClass: 'iradio_square-blue',
+        increaseArea: '20%' /* optional */
+      });
+    });
+  </script>
 
 
    

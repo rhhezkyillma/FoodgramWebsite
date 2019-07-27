@@ -281,15 +281,12 @@
                                                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                                                                   <input  style="width: 344px" placeholder="Password" name="password" type="password" required="">
                                                             </div>
-                                                            
-
-
-
-
-
-                                                    
+                                                                                                          
                                                         <label class="anim" style="margin-top: 25px; margin-left: 1px; margin-right: 1px">
-                                                          <input class="checkbox" type="checkbox">
+
+                                                        <div class="checklist">
+                                                          <input class="checkbox" type="checkbox" required>
+                                                        </div>
                                                               <span style="margin-top: -5px;">I agree all statements in <u>Terms of service</u></span> 
                                                    
                                                           </label> 
@@ -310,11 +307,17 @@
                 </div>
         </section>
         <!--End Welcome Section-->
-
-
-
-
-   
+  
+    <script>
+      $(function () {
+        $('input').checklist({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
+          increaseArea: '20%' /* optional */
+        });
+      });
+    </script>
+ 
     <!--javascript-->
     <script src="{{ asset('assets/auth/js/jquery.min.js') }} "></script>
     <script src="{{ asset('assets/auth/js/bootstrap.min.js') }}"></script>
