@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ asset('assets/auth/css/responsive.css') }} ">
     <link rel="stylesheet" href="{{ asset('assets/auth/css/animate.min.css') }} ">
     <!---title logo icon-->
-    <link rel="shortcut icon" href="{{ asset('assets/auth/images/favicon.ico') }} " />
+    <link rel="icon" type="image/png" href="{{ asset('assets/icon_logo.png') }}"/>
     <!-- css files -->
     <link rel="stylesheet" href="{{ asset('assets/auth/css/font-awesome.css') }}"> <!-- Font-Awesome-Icons-CSS -->
     <link rel="stylesheet" href="{{ asset('assets/auth/css/stylee.css') }}" type="text/css" media="all" /> <!-- Style-CSS --> 
