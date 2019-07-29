@@ -9,7 +9,7 @@ Cara Running Laravel dan HmL5
 4. jangan lupa buat database (dbfoodgram) di phpmyadmin
 5. langkah selanjutnya setting database nya di .env
 6. jalankan php artisan migrate
-7. Mengimpor file database (sql) yang terdapat di folder databaseee kedalam database dbfoodgram
+7. Mengimpor file database (sql)  database dbfoodgram
 8. terakhir php artisan serve
 9. Login admin - username : admin@gmail.com - password : rootadmin
 selesai deh!
