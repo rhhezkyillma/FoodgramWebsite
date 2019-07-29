@@ -293,7 +293,7 @@
                                                               <div class="clear"></div>
                                                           <input type="submit" value="Sign Up">
                                                              <div class="checkbox" style="margin-top: 25px;">
-                                                                 Have an account?<a href="#"><u>Sign In</u></a>
+                                                                 Have an account?<a href="{{route('login')}}"><u>Sign In</u></a>
                                                               </div> 
                                                     </form>
                                                 </div>
