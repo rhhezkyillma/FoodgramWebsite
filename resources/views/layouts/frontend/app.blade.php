@@ -62,7 +62,7 @@
     @stack('css')
 </head>
 <body >
-        <div id="loader">
+        <div id="loader" style="position:relative">
                 <div class="wrapper">
                <div>
                  <div class="bar"></div>
