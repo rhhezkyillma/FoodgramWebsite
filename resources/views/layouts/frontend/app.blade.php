@@ -62,7 +62,7 @@
     @stack('css')
 </head>
 <body >
-        <div id="loader" style="position:relative">
+        <div id="loader">
                 <div class="wrapper">
                <div>
                  <div class="bar"></div>
@@ -300,7 +300,7 @@
     <!-- #END# Left Sidebar -->
 </section>
 
-<a href="contentt" class="scrollup" style="display: none;">Scroll</a>
+<a href="contentt" class="scrollup" style="display: none; margin-right:10px">Scroll</a>
 
    <!-- Modernizer -->
    <script src="{{ asset('assets/frontend/js/modernizer.js') }}"></script>
