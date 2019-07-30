@@ -33,27 +33,27 @@
                             <p>Foodgram adalah situs web untuk berbagi ide resep dan kiat memasak.Foodgram dapat membantu Anda Dengan memecahkan masalah yang terkait dengan memasak sehari-hari. Temukan makanan favorit Anda bersama kami. </p>
                             <ul class="socials-box footer-socials pull-left">
                                 <li>
-                                    <a href="#">
-                                        <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                    <a href="https://web.facebook.com/rezky.caroline">
+                                        <div class="social-circle-border"><i class="fa fa-facebook-f"></i></div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://twitter.com/rhhezky">
                                         <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://github.com/rhhezkyillma/">
                                         <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://github.com/rhhezkyillma/">
                                         <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://github.com/rhhezkyillma/">
                                         <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
                                     </a>
                                 </li>
@@ -66,7 +66,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="footer-box-b" >
                             <h3>New Menu</h3>
-                            <ul style="margin-top:11px">
+                            <ul >
                                 <li><a href="#">Sate Padang</a></li>
                                 <li><a href="#">Sate Ayam</a></li>
                                 <li><a href="#">Sup Ayam</a></li>

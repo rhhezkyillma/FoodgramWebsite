@@ -124,6 +124,12 @@ class HomeController extends Controller
         return view('home.contact');
     }
 
+    public function download()
+    {
+        return view('home.download');
+    }
+
+
 
 
 

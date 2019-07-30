@@ -28,6 +28,8 @@ Route::get('homesingleblog/{id}', 'HomeController@singleblog') ->name('singleblo
 
 Route::get('homerecipe', 'HomeController@recipe') ->name('recipe.index');
 
+Route::get('homedownload', 'HomeController@download') ->name('download.index');
+
 Route::get('homecontact', 'HomeController@contact') ->name('contact.index');
 
 Route::get('logout','HomeController@logout')->name('logout.index');

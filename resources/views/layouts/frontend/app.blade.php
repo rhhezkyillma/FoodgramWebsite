@@ -39,10 +39,24 @@
 
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/contact/css/main.css') }}">
-  
     
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Pathway+Gothic+One|Roboto:100,300,400" rel="stylesheet">
 
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="{{ asset('assets/download/css/magnific-popup.css') }} ">
+    <!-- Aos Animation -->
+    <link rel="stylesheet" href="{{ asset('assets/download/css/aos.css') }}">
+    <!-- Custom styles for this template -->
+    {{-- <link rel="stylesheet" href="{{ asset('assets/download/css/style.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('assets/download/css/style.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Color style -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   
 <!--selectric stylesheet-->
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/selectric.css') }}"/>
     @stack('css')
@@ -326,6 +340,9 @@
     <script src="{{ asset('assets/recipes/js/jquery.resizeimagetoparent.min.js') }}"></script>
     <script src="{{ asset('assets/recipes/js/jquery.dotdotdot.min.js"') }}"></script>
     <script src="{{ asset('assets/recipes/js/common.js') }}"></script>
+
+
+  
 
 
 @stack('js')

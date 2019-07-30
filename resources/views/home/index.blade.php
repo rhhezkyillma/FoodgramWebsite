@@ -118,6 +118,22 @@
         <!-- end container -->
     </div>
     <!-- end blog-main -->
+    <section class="bg-custom home-fullscreen home" id="home" >
+        <div class="home-sm">
+            <div class="container">
+                <div class="row" style="margin-top:100px; margin-bottom:100px">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="block-title text-center">
+                        Login For Best Features	
+                    </h2>
+                    <div class="blog-btn-v">
+                        <a class="hvr-underline-from-center" href="{{route('login')}}">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
 
 @endsection
 

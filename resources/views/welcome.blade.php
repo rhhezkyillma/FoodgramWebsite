@@ -13,99 +13,45 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
                         <h2 class="block-title text-center">
-						Hottest Recipes at Foodgram	
+						Resep Terbaik di Foodgram	
 					</h2>
-                        <p class="title-caption text-center">There are many variations recipes food and drink of Foodgram </p>
+                        <p class="title-caption text-center">Terdapat berbagai macam menu variasi makanan dan minuman dari Foodgram </p>
                     </div>
 
-<section class="hot-recipes-var2 ext-var3 corner-bg-var">
-    <div class="container">
-        <div class="wrapper-hot-recipe-var2">
-            <div class="hot-recipes-bordered">
-                 <div class="hot-row">
-                    <div class="split-images-var2 col-size text-center">
-                        <div class="image-first inner-split">
-                            <div class="image common-split animated wow flipInY animation-delay100ms">
-                                <a href="#"><img src="{{ asset('assets/frontend/images/temp-images/hot3-var1.jpg') }}" alt="image"/></a>
-                            </div>
-                            <div class="intro common-split animated wow flipInY animation-delay200ms">
-                                <div class="intro-inner ">
-                                    <h3><a href="#">pasto pizza with fillas cheese toppings</a></h3>
-                                    
-                                    <p>
-                                        Nam ornare arcu turpis, nec congu
-                                        Curabitur quis euismod...
-                                    </p>
-                                    <a class="read-more" href="#">Learn more</a>
+                    <section class="hot-recipes-var2 ext-var3 corner-bg-var">
+                            <div class="container">
+                                <div class="wrapper-hot-recipe-var2">
+                                    <div class="hot-recipes-bordered">
+                                         <div class="hot-row">
+                                            @foreach ($receipe as $item)
+                                            <div class="split-images-var2 col-size text-center">
+                                                <div class="image-first inner-split">
+                                                    <div class="image common-split animated wow flipInY animation-delay100ms">
+                                                        <a href="#"><img src="{{ asset($item->image) }}" alt="image" style="margin-bottom=100px"/></a>
+                                                    </div>
+                                                    <div class="intro common-split animated wow flipInY animation-delay200ms">
+                                                        <div class="intro-inner ">
+                                                            <h3><a href="#">{{$item->title}}</a></h3>
+                                                            
+                                                            <p>
+                                                                    {!! str_limit($item->description, $limit = 100, $end = '...')!!}
+                                                            </p>
+                                                            <a class="read-more" href="{{route('singlerecipe.index',['id ' => $item->title])}}">Learn more</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            @endforeach
+                        
+                                                                       
+                                        </div>
+                                    </div>
+                                    <div class="corner-image hot animated wow rollIn animation-delay800ms">
+                                    <img src="images/slider-bg-corner2.png" alt="image">
+                                </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="split-images-var2 col-size text-center">
-                        <div class="image-first inner-split">
-                            <div class="image common-split animated wow flipInY animation-delay300ms">
-                                <a href="#"><img src="{{ asset('assets/frontend/images/temp-images/hot3-var2.jpg') }}" alt="image"/></a>
-                            </div>
-                            <div class="intro common-split animated wow flipInY animation-delay400ms">
-                                <div class="intro-inner">
-                                    <h3><a href="#">pasto pizza with fillas cheese toppings</a></h3>
-                                    <div class="short-separator"></div>
-                                    <p>
-                                        Nam ornare arcu turpis, nec congu
-                                        Curabitur quis euismod...
-                                    </p>
-                                    <a class="read-more" href="#">Learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="split-images-var2 col-size text-center">
-                        <div class="intro-first inner-split">
-                            <div class="image common-split animated wow flipInY animation-delay600ms">
-                                <a href="#"><img src="{{ asset('assets/frontend/images/temp-images/hot3-var3.jpg') }}" alt="image"/></a>
-                            </div>
-                            <div class="intro common-split animated wow flipInY animation-delay500ms">
-                                <div class="intro-inner">
-                                    <h3><a href="#">pasto pizza with fillas cheese toppings</a></h3>
-                                    <div class="short-separator"></div>
-                                    <p>
-                                        Nam ornare arcu turpis, nec congu
-                                        Curabitur quis euismod...
-                                    </p>
-                                    <a class="read-more" href="#">Learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="split-images-var2 col-size text-center">
-                        <div class="intro-first inner-split">
-                            <div class="image common-split animated wow flipInY animation-delay800ms">
-                                <a href="#"><img src="{{ asset('assets/frontend/images/temp-images/hot3-var4.jpg') }}" alt="image"/></a>
-                            </div>
-                            <div class="intro common-split animated wow flipInY animation-delay700ms">
-                                <div class="intro-inner">
-                                    <h3><a href="#">pasto pizza with fillas cheese toppings</a></h3>
-                                    <div class="short-separator"></div>
-                                    <p>
-                                        Nam ornare arcu turpis, nec congu
-                                        Curabitur quis euismod...
-                                    </p>
-                                    <a class="read-more" href="#">Learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="corner-image hot animated wow rollIn animation-delay800ms">
-            <img src="{{ asset('assets/frontend/images/menu-item-thumbnail-02.jpg') }} " alt="image">
-        </div>
-        </div>
-    </div>
-</section>
+                        </section>
                   
                     <!-- end gal-container -->
                 </div>
@@ -125,127 +71,43 @@
 					Blog	
 				</h2>
                     <div class="blog-box clearfix">
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="{{ asset('assets/frontend/images/featured-image-01.jpg') }}" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                        @foreach ($article as $item)
+                            <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="blog-block">
+                                        <div class="blog-img-box" style="padding:20px; margin-top:20px; margin-bottom:20px">
+                                            <img src="{{ asset($item->image) }}" alt="" />
+                                            <div class="overlay">
+                                                <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                        <article class="col-single text-center">
-                                            <h3 style="margin-top: -20px"><a href="#">Pasto Pizza with Extra fillas</a></h3>
-                                            <div class="short-separator"></div>
-                                            <ul class="news-post-meta post-meta">
-                                                <li class="author"><a href="#">Reezky Illma</a></li>
-                                                <li class="date">23/10/2015</li>
-                                            </ul>
-                                            <p>
-                                                Nam ornare arcu turpis ne congues with
-                                                Curabitur quis euismod mauris.
-                                            </p>
-
-                                            <a class="read-more-bordered" href="#">read more</a>
-                                        </article>
+                                        <div class="blog-dit">
+                                            <article class="col-single text-center">
+                                                <h3><a href="#">{{$item->title}}</a></h3>
+                                                <div class="short-separator"></div>
+                                                <ul class="news-post-meta post-meta">
+                                                    <li class="author"><a href="#">{{$item->name}}</a></li>
+                                                    <li class="date">{{$item->created_at}}</li>
+                                                </ul>
+                                                <p>
+                                                {!! str_limit($item->description, $limit = 150, $end = '...')!!}
+                                                </p>
+                                                <a class="read-more-bordered" style="margin-bottom:50px" href="{{route('singleblog.index',['id ' => $item->title])}}">read more</a>
+                                            </article>
+                                        </div>            
                                     </div>
                                 </div>
+                                <!-- end col -->
                             </div>
-                            <!-- end col -->
-                        </div>
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="{{ asset('assets/frontend/images/featured-image-02.jpg') }}" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                        <article class="col-single text-center">
-                                            <h3 style="margin-top: -20px"><a href="#">Pasto Pizza with Extra fillas</a></h3>
-                                            <div class="short-separator"></div>
-                                            <ul class="news-post-meta post-meta">
-                                                <li class="author"><a href="#">Reezky Ilma</a></li>
-                                                <li class="date">25/07/2019</li>
-                                            </ul>
-                                            <p>
-                                                Nam ornare arcu turpis ne congues with
-                                                Curabitur quis euismod mauris.
-                                            </p>
 
-                                            <a class="read-more-bordered" href="#">read more</a>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="{{ asset('assets/frontend/images/featured-image-03.jpg') }}" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                         <article class="col-single text-center">
-                                            <h3 style="margin-top: -20px"><a href="#">Pasto Pizza with Extra fillas</a></h3>
-                                            <div class="short-separator"></div>
-                                            <ul class="news-post-meta post-meta">
-                                                <li class="author"><a href="#">Reezky Illma</a></li>
-                                                <li class="date">25/07/2019</li>
-                                            </ul>
-                                            <p>
-                                                Nam ornare arcu turpis ne congues with
-                                                Curabitur quis euismod mauris.
-                                            </p>
-
-                                            <a class="read-more-bordered" href="#">read more</a>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="blog-block">
-                                    <div class="blog-img-box">
-                                        <img src="{{ asset('assets/frontend/images/featured-image-04.jpg') }}" alt="" />
-                                        <div class="overlay">
-                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="blog-dit">
-                                         <article class="col-single text-center">
-                                            <h3 style="margin-top: -20px"><a href="#">Pasto Pizza with Extra fillas</a></h3>
-                                            <div class="short-separator"></div>
-                                            <ul class="news-post-meta post-meta">
-                                                <li class="author"><a href="#">Reezky Illma</a></li>
-                                                <li class="date">25/07/2019</li>
-                                            </ul>
-                                            <p>
-                                                Nam ornare arcu turpis ne congues with
-                                                Curabitur quis euismod mauris.
-                                            </p>
-
-                                            <a class="read-more-bordered" href="#">read more</a>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
+                        
+                        @endforeach
+                        
                     </div>
                     <!-- end blog-box -->
 
                     <div class="blog-btn-v">
-                        <a class="hvr-underline-from-center" href="#">View Blog</a>
+                        <a class="hvr-underline-from-center" href="{{route('blog.index')}}">View Blog</a>
                     </div>
 
                 </div>
@@ -256,6 +118,22 @@
         <!-- end container -->
     </div>
     <!-- end blog-main -->
+    <section class="bg-custom home-fullscreen home" id="home" >
+        <div class="home-sm">
+            <div class="container">
+                <div class="row" style="margin-top:100px; margin-bottom:100px">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="block-title text-center">
+                        Login For Best Features	
+                    </h2>
+                    <div class="blog-btn-v">
+                        <a class="hvr-underline-from-center" href="{{route('login')}}">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
 
 @endsection
 
