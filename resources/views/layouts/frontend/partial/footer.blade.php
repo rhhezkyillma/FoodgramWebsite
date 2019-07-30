@@ -27,7 +27,7 @@
                             <img src="{{ asset('assets/frontend/images/logo.png') }}" alt="" />
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="margin-left: 190px">
+                    <div class="col-lg-3  col-md-6 col-sm-6"  style="margin-left:6%">
                         <div class="footer-box-a">
                             <h3>About Us</h3>
                             <p>Foodgram adalah situs web untuk berbagi ide resep dan kiat memasak.Foodgram dapat membantu Anda Dengan memecahkan masalah yang terkait dengan memasak sehari-hari. Temukan makanan favorit Anda bersama kami. </p>
@@ -57,13 +57,13 @@
                                         <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> <br>
 
                         </div>
                         <!-- end footer-box-a -->
                     </div>
                     <!-- end col -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3  col-md-6 col-sm-6" style="margin-left:6%">
                         <div class="footer-box-b" >
                             <h3>New Menu</h3>
                             <ul >
@@ -76,7 +76,7 @@
                         <!-- end footer-box-b -->
                     </div>
                     <!-- end col -->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3  col-md-6 col-sm-6" style="margin-left:6%">
                         <div class="footer-box-c">
                             <h3>Contact Us</h3>
                             <p>
