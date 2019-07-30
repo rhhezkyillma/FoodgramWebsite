@@ -284,11 +284,13 @@
            </div>
 <!-- #END# Search Bar -->
 <!-- Top Bar -->
+<div id="contentt">
     @include('layouts.frontend.partial.header')
+</div>    
 <!-- #Top Bar -->
 
 
-<section class="content">
+<section class="content" >
     @yield('content')
 </section>
 
@@ -297,6 +299,8 @@
     @include('layouts.frontend.partial.footer')
     <!-- #END# Left Sidebar -->
 </section>
+
+<a href="contentt" class="scrollup" style="display: none;">Scroll</a>
 
    <!-- Modernizer -->
    <script src="{{ asset('assets/frontend/js/modernizer.js') }}"></script>
